@@ -52,8 +52,8 @@
                   </p>
                 </td>
                 <td style="padding:2.5%;width:40%;max-width:40%">
-                  <a href="images/ycx_new1.png"><img style="width:80%;max-width:80" alt="profile photo"
-                      src="images/ycx_new1.png" class="hoverZoomLink"></a>
+                  <a href="images/ycx_pic_1.jpg"><img style="width:80%;max-width:80" alt="profile photo"
+                      src="images/ycx_pic_1.jpg" class="hoverZoomLink"></a>
                 </td>
               </tr>
             </tbody>
@@ -65,6 +65,7 @@
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <heading>News</heading>
                   <ul>
+                    <li> <b>[Oct 2023]</b> One paper accepted to EMNLP 2023.</li>
                     <li> <b>[Aug 2022]</b> One paper accepted to COLING 2022.</li>
                     <li> <b>[Sep. 2022]</b> I joined the Institute of Information Engineering, UCAS as a Ph.D. student.</li>
                     <li> <b>[Oct. 2021]</b> I joined the PRC, WeChat AI at Tencent, supervised by <a href="https://fandongmeng.github.io/">Fandong Meng</a>.</li>                                     
@@ -98,7 +99,50 @@
             </tbody>
           </table>
 
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+                <td style="padding:20px;width:30%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='malle_image'>
+                      <img src='images/emnlp23.jpg' width="190">
+                    </div>
+                    <img src='images/emnlp23.jpg' width="190">
+                  </div>
+                  <script type="text/javascript">
+                    function malle_start() {
+                      document.getElementById('malle_image').style.opacity = "1";
+                    }
 
+                    function malle_stop() {
+                      document.getElementById('malle_image').style.opacity = "0";
+                    }
+                    malle_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:70%;vertical-align:top">
+                  <a href="https://arxiv.org/abs/2310.08943">
+                    <papertitle>Multi-level Adaptive Contrastive Learning for Knowledge Internalization in Dialogue Generation</papertitle>
+                  </a>
+                  <br>
+                  <strong>Chenxu Yang</strong>, Zheng Lin, Lanrui Wang, Chong Tian, Liang Pang, Jiangnan Li, Qirong Ho, Yanan Cao, Weiping Wang
+                  <br>
+                  <em>EMNLP</em>, 2023 &nbsp <font color="red"><strong>(Main Conference)</strong></font>
+                  <br>
+                  <a href="https://arxiv.org/abs/2310.08943">pdf</a>
+                  /
+                  <a href="https://github.com/iie-ycx/coling2022-take">code</a>
+                  <p></p>
+                  <p>
+                    In this work, we find that such copying-style degeneration is primarily due to the weak likelihood objective, which allows the model to "cheat" the objective by merely duplicating knowledge snippets in a superficial pattern matching manner based on overlap. To overcome this challenge, we propose a Multi-level Adaptive Contrastive Learning (MACL) framework that dynamically samples negative examples and subsequently penalizes degeneration behaviors at both the token-level and sequence-level. Extensive experiments on the WoW dataset demonstrate the effectiveness of our approach across various pre-trained models and decoding strategies. 
+                  </p>
+                </td>
+              </tr>
+
+
+            </tbody>
+          </table>
 
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
